@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 12px 0;
+            background-color:#343a40;
+            color: #ffff;
+
+        }
+        .nav-toggler-icon{
+            display: flex;
+            gap: 3px;
+            flex-direction: column;
+            
+            
+            border: 1px solid #ffff;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 8px;
+        }
+.nav-toggler-icon span {
+    
+    display: inline-block;
+    height: 2px;
+    width: 22px;
+    background-color: #ffff;
+    text-align: right;
+}
+.section-1{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.header-2{
+    font-size: 40px;
+    font-weight: 100;
+}
+.para-1{
+    line-height: 20px;
+    font-weight: 50px;
+    
+}
+.div-button{
+    padding: 20px;
+
+}
+.primary-button{
+    font-size: 16px;
+    padding:10px;
+    border-radius: 8px;
+     background-color:#549be6;
+    border-color: #549be6; 
+}
+.primary-button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.secondary-button{
+    font-size: 16px;
+    padding:10px;
+    border-radius: 8px;
+    background: color #6c757d; 
+}
+.secondary-button:hover{
+    background-color:aquamarine;
+    cursor: pointer;
+}
+.card-1{
+    width: calc(100%/3);
+    /* background-color: #404046; */
+    text-align: center;
+    border:1px solid rgba(179, 170, 166, 0.178);
+}
+.header-url{
+    padding: 70px;
+    
+}
+.button-view{
+    font-size: 16px;
+    padding: 6px;
+}
+.button-edit{
+    font-size: 16px;
+    padding: 6px;
+}
+.mins9{
+    text-align: right;
+    padding-right:80px;
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    margin-bottom: 40px;
+    background-color: #18ddd367;
+}
+.para-2{
+    color: white;
+}
+.div-1{
+    background-color: #404046;
+    padding: 100px 50px;
+    color: white;
+}
+.para-3{
+    font-size: 16px;
+    padding: 10px;
+    background-color:#6c757d;
+}
+.min{
+    text-align: right;
+    padding: 0 80px;
+}
+.button{
+    display: flex;
+    justify-content: flex-start;
+}
+.last-para{
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><i class="fa-solid fa-camera"></i>
+                Album
+            </h1>
+            <div class="nav-toggler-icon">
+                <span ></span>
+               <span></span> 
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="section-1">
+        <h2 class="header-2">Album example</h2>
+        <p class="para-1">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        <div class="div-button">
+            <button class="primary-button">Main call to action</button>
+            <button class="secondary-button">Secondary action</button>
+        </div>
+    </section>
+    <section class="main-section">
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-1">
+        <div>
+            <div class="div-1"><h1>Thumbnail</h1></div>
+            <div class="para-3">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+                </p>
+                
+            </div>
+            <div class="button">
+                <button class="button-view">View</button>
+                <button class="button-edit">Edit</button>
+                <p class="min">9min</p>
+            </div>
+        </div>
+    </section>
+</section>
+<section>
+<p class="last-para">Album example is © Bootstrap, but please download and customize it for yourself!
+<p class="last-para">
+  Back to top New to Bootstrap? Visit the homepage or read our getting started guide.</p>
+</section>
+    

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzilla</title>
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       
+        .container {
+            max-width: 1260px;
+            padding: 0 30px;
+            margin: 0 auto;
+            width: 100%;
+
+        }
+       
+
+        header {
+            padding: 30px;
+
+        }
+
+        .img-logo {
+            width: 142px;
+        }
+
+        .nav-toggler-icon {
+            display: flex;
+            gap: 3px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 12px;
+
+        }
+
+        .banner-section {
+            padding: 100px 30px;
+            background-color: #222;
+            color: #fff;
+            background-image: url(https://cartzilla.createx.studio/img/intro/intro-hero.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .nav-toggler-icon span {
+
+            display: inline-block;
+            height: 2px;
+            width: 22px;
+            background-color: #222;
+            text-align: right;
+        }
+
+        .header-button {
+            background-color: #fe696a;
+            font: 15px;
+            padding: 10px 22px;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+        }
+        .header-button-last{
+            background-color: #fe696a;
+            font: 15px;
+            padding: 20px 22px;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+        }
+        
+        button:hover{
+            cursor: pointer;
+            background-color: orangered;
+        }
+        .header-whole {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .fa-solid {
+            padding: 0 3px;
+            font-size: 15px;
+        }
+
+        .header-right {
+            display: flex;
+
+        }
+
+        .header-list {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        header li {
+            padding: 18px 16px 14px;
+            font-size: 14px;
+        }
+        .home-header{
+            color: orange;
+        }
+        .s1-content{
+            text-align: center;
+        }
+
+        .s1-content-top {
+            font-size: 20px;
+            margin: 0 8px 12px;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 30px;
+
+        }
+
+        h1 {
+            font-size: 36.37px;
+            margin: 0 0 12px;
+            padding: 0 0 16px;
+        }
+
+        .section-1 {
+            text-align: center;
+        }
+
+        .s1-content-button {
+            background-color: #fe696a;
+            font: 17px;
+            padding: 12px 24px;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            margin: 20px 0;
+        
+        }
+
+        .img-content-s3 {
+            max-width: 100%;
+            border: 1px solid #e3e9ef;
+            border-radius: 6px;
+        }
+
+        .img-content {
+            text-align: center;
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 29.822px;
+            margin: 0 0 12px;
+        }
+
+        .s3-para {
+            font-size: 16px;
+            margin: 0 0 16px;
+        }
+
+        .s3-content {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .whole-img-s3 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 0;
+        }
+
+        .section-4 {
+            padding: 48px 0;
+            background-color: #373f50;
+            color: #ffffff;
+        }
+
+        .s4-para {
+            font-size: 16px;
+            margin: 0 0 16px;
+
+        }
+
+        .s4-list-ul {
+            list-style: none;
+            margin: 0 0 6.4px;
+            line-height: 30px;
+        }
+
+        .fa-circle-check {
+            color: green;
+            padding-right: 18px;
+        }
+
+        .s4 {
+            display: flex;
+            padding: 24px 15px;
+        }
+      h6{
+        font-size: 17px;
+        margin: 0 0 12px;
+        color: #373f50;
+      }
+
+        .s4-right {
+            width: 60%;
+            padding-left: 105px;
+        }
+
+        .img-s4 {
+            max-width: 100%;
+        }
+
+        .img-s5-left {
+            max-width: 100%;
+            width: 30%;
+        }
+
+        .img-s5-right {
+            max-width: 100%;
+            width: 50%;
+
+        }
+
+        .s5 {
+            display: flex;
+
+        }
+
+        .section-5 {
+            padding: 40px 0;
+            background-color: #f6f9fc;
+        }
+
+        .s5-left {
+            text-align: center;
+        }
+
+        .para-s5 {
+            font-size: 16px;
+            margin: 0 0 16px;
+            padding: 0 0 8px;
+        }
+
+        .section-6 {
+            padding: 40px 0;
+            border-bottom: 1px solid #7d879c;
+        }
+
+        .s6-img {
+            width: 90px;
+            max-width: 100%;
+        }
+
+        .s6-para {
+            font-size: 13px;
+            color: #7d879c;
+            line-height: 24px;
+        }
+
+        .s6-content {
+            width: 25%;
+            text-align: center;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .section-6 h2 {
+            text-align: center;
+        }
+
+        .s6-icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+
+        }
+
+        h3 {
+            padding: 16px 10px;
+        }
+        .footer-top{
+            border-bottom: 1px solid #7d879c;
+        }
+        .footer-top button{
+            margin-bottom: 40px;
+        }
+        .para-footer{
+            font-size: 13px;
+            text-align: center;
+            padding: 30px 0;
+        }
+        @media(max-width:767px){
+            .whole-img-s3{
+                flex-wrap: wrap;
+                
+            }
+            .img-content{
+                width: 100%;
+
+            }
+            .s4{
+                flex-wrap: wrap;
+            }
+            .s4-left{
+                width: 100%;
+            }
+            .img-s4{
+                width: 100%;
+            }
+            .header-whole{
+                flex-wrap: wrap;
+            }
+            .s6-content{
+                width: 100%;
+
+            }
+            .s5-left{
+                width: 100%;
+            }
+            .img-s5-right{
+                width: 100%;
+            }
+            .s5-right{
+                width: 100%;
+            }
+            .s5{
+           
+                flex-wrap: wrap;
+            }
+            .header-list{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-whole">
+                <img class="img-logo" src="https://cartzilla.createx.studio/img/logo-dark.png" alt="#">
+                <div>
+                    <ul class="header-list">
+                        <li class="home-header">Home</li>
+                        <li>Shop</li>
+                        <li>Account</li>
+                        <li>Pages</li>
+                        <li>Blog</li>
+                        <li>Docs/Components</li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="nav-toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="header-button"><i class="fa-solid fa-cart-shopping"></i>Buy now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner-section">
+        
+            <div class="container">
+             
+                <div class="s1-content">
+                    <div class="s1-content-top">
+                        <h1>Multipurpose <strong>Bootstrap 5 E-Commerce</strong> Template</h1>
+                        <span>Single/Multi-vendor</span>
+                        <span><strong> Marketplace</strong> </span>
+                        <span>Fashion</span>
+                        <span><strong></strong> Electronics</span>
+                        <span>Cart</span>
+                        <span><strong>NFT</strong></span>
+                        <span>Checkout</span>
+                        <span><strong>Grocery store</strong></span>
+                        <span>Account/Dashboard</span>
+                        <span><strong>Food Delivery</strong></span>
+                    </div>
+                    <button class="s1-content-button">View Demos <i
+                            class="fa-solid fa-circle-chevron-down"></i></button>
+                </div>
+            
+            </div>
+        
+    </section>
+    <section class="section-3">
+        <div class="container">
+
+            <div class="s3-content">
+                <h2>Explore <strong>Cartzilla Demos</strong></h2>
+                <p class="s3-para">Explore the collection of carefully built homepages. More to come soon!</p>
+            </div>
+            <div class="whole-img-s3">
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/08.jpg" alt="#">
+                    <h3>NFT MArketplace</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/01.jpg" alt="#">
+                    <h3>Fashion Store v.1</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/03.jpg" alt="#">
+                    <h3>Electronics Store</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/07.jpg" alt="#">
+                    <h3>Food Delivery Service</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/04.jpg" alt="#">
+                    <h3>Multi-vendor Marketplace</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/06.jpg" alt="#">
+                    <h3>Grocery Store</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/02.jpg" alt="#">
+                    <h3>Fashion Store v.2</h3>
+                </div>
+                <div class="img-content">
+                    <img class="img-content-s3" src="https://cartzilla.createx.studio/img/home/preview/05.jpg" alt="#">
+                    <h3>Single Product / Brand Store</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="container">
+            <div class="s4">
+                <div class="s4-left">
+                    <h2>Complete <strong>E-Commerce Front-End </strong>Solution</h2>
+                    <p class="s4-para">All you need for your next e-commerce project</p>
+                    <div class="s4-list">
+                        <ul class="s4-list-ul">
+                            <li><i class="fa-regular fa-circle-check"></i>Shop Grid / List Layout Options</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Multiple Product Page Variations</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Complete Order Workflow: Cart + Checkout</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Shop Customer Account Pages</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Vendor Dashboard for Multi-vendor Marketplaces
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Ready for any Content: Fashion, Electronics,
+                                Digital(Downloadable) Products,etc. </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Blog Pages: Blog Layouts + Single Post</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Help Center / Support Pages</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Secondary Pages: About, Contacts, 404,etc.
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>40+ Flexible Components</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s4-right">
+                    <img class="img-s4" src="https://cartzilla.createx.studio/img/intro/pages-showcase.jpg" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="container">
+            <div class="s5">
+                <div class="s5-left">
+                    <h2>Even More <strong>Mobile Friendly</strong> interface</h2>
+                    <p class="para-s5">New <strong>Toolbar</strong> designed specifically for handheld devices to
+                        further improve user experience.</p>
+                    <p class="para-s5">Scan QR code below to test on your device.</p>
+                    <img class="img-s5-left" src="https://cartzilla.createx.studio/img/intro/qrcode.png" alt="#">
+                </div>
+                <div class="s5-right">
+                    <img class="img-s5-right" src="https://cartzilla.createx.studio/img/intro/handheld-toolbar.jpg"
+                        alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="container">
+            <div class="s6">
+                <h2><strong>Cartzilla Feature </strong> Highlights</h2>
+                <div class="s6-icons">
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/01.png" alt="#">
+                        <h6>Kick-start Your Development</h6>
+                        <p class="s6-para">Start your development process fasr and east with Node.js and Gulp setup.
+                            Configuration files are included in download package. Full tasks automation.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/02.png" alt="#">
+                        <h6>Easy to Customize with Sass</h6>
+                        <p class="s6-para">Cartzilla is built using Sass. Easily change colors, typography and much
+                            more. It
+                            is the most mature, stable, and powerful CSS extension language in the world.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/03.png" alt="#">
+                        <h6>Pug - Node Templating Engine</h6>
+                        <p class="s6-para">No need to write huge amount of HTML, if you don’t want to. Pug provides
+                            features
+                            not available in plain HTML like variables, includes, mixins, functions, etc.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/04.png" alt="#">
+                        <h6>Build with Bootstrap 5</h6>
+                        <p class="s6-para">Cartzilla is the powerful e-commerce front-end solution based on Bootstrap 5
+                            -
+                            the world's most popular responsive, mobile-first front-end component library.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/05.png" alt="#">
+                        <h6>40+ Flexible Components</h6>
+                        <p class="s6-para">Besides styling all default Bootstrap 5 components Cartzilla introduces lots
+                            of new flexible, customizable and reusable elements you can use across the website.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/06.png" alt="#">
+                        <h6>Mobile Friendly Interface</h6>
+                        <p class="s6-para">It's not a surprise that nowadays over 70% of users shop online using their
+                            mobile devices. Cartzilla is 100% responsive and optimized for small touch screens.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/07.png" alt="#">
+                        <h6>Google Fonts</h6>
+                        <p class="s6-para">Cartzilla uses Google fonts which are free, fast to load and of very high
+                            quality. Currently Google fonts library includes 870+ font families to choose from.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/08.png" alt="#">
+                        <h6>Touch-enabled Sliders</h6>
+                        <p class="s6-para">In the era of touch screens it's important to ensure great user experience on
+                            handheld devices, especially when it comes to such frequently used interface component as
+                            slider.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/09.png" alt="#">
+                        <h6>Vector based HD Ready Icons</h6>
+                        <p class="s6-para">Cartzilla is equiped with font-based icon pack to ensure that infographics
+                            and interface icons look sharp on any device with any screen resolution and pixel density.
+                        </p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/10.png" alt="#">
+                        <h6>W3C Valid HTML Code</h6>
+                        <p class="s6-para">All HTML files are checked via W3C validator to ensure 100% valid code. As
+                            you probably know invalid HTML limits innovation, but Cartzilla is innovative at its core.
+                        </p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/11.png" alt="#">
+                        <h6>Future - proof Javascript</h6>
+                        <p class="s6-para">Cartzilla core scripts as well as all dependencies are written in vanilla JS.
+                            And now with Bootstrap 5 we finally drops jQuery and uses ES6 modules.</p>
+                    </div>
+                    <div class="s6-content">
+                        <img class="s6-img" src="https://cartzilla.createx.studio/img/intro/features/12.png" alt="#">
+                        <h6>Detailed Documentation</h6>
+                        <p class="s6-para">Download package includes links to online documentation. It covers all
+                            crucial information about how to get started, customize template and components usage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h3>Still not convinced?</h3>
+                <h2>Add premiuim support and lifetime updates to this.</h2>
+                <button class="header-button-last"><i class="fa-solid fa-cart-shopping"></i>Buy Cartzilla</button>
+            </div>
+            <p class="para-footer">© All rights reserved. Made by Createx Studio</p>
+        </div>
+    </footer>
+</body>
+
+</html>

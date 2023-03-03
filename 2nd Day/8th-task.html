@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'PT Serif', serif; 
+        }
+
+        .container {
+            max-width: 1140px;
+            padding: 0 30px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .header-left {
+            list-style: none;
+            display: flex;
+
+        }
+
+        li {
+            padding: 0 10px;
+        }
+
+        .div-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        input {
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 6px 12px;
+            border: 1px solid gray;
+        }
+
+        .section-1 {
+            background-color: #CEEEED;
+        }
+
+        .s1 {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 32.3px;
+            margin: 0 0 16px;
+        }
+
+        .para-s1 {
+            font-size: 14px;
+            margin: 0 0 24px;
+
+        }
+
+        button {
+            font-size: 17.5px;
+            padding: 8px 16px;
+            background-color: #3fb618;
+            cursor: pointer;
+            text-align: center;
+            color: #eeeeee;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #62A353;
+        }
+
+        .section-2 {
+            padding: 40px 0;
+        }
+
+        h3 {
+            font-size: 20.82px;
+            padding: 12px 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid #adb5bd;
+        }
+        img:hover{
+          margin: 3px;
+        }
+        p {
+            font-size: 14px;
+            padding: 24px;
+        }
+
+        .article {
+            border-bottom: 1px solid #6c757d;
+            width: calc(33.333333% - 10px);
+            padding: 10px;
+            margin: 3px;
+        }
+
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+        }
+
+        footer {
+            color: #6c757d;
+            background-color: #050506;
+        }
+
+        footer ul {
+            display: flex;
+        }
+
+        footer ul li {
+            padding: 2px 16px;
+            margin: 20px 0;
+            border-right: 1px solid #6c757d;
+            list-style: none;
+        }
+
+        .footer-ul {
+            border-bottom: 1px solid #6c757d;
+            padding: 20px 0;
+        }
+        footer span{
+            display: block;
+            text-align: center;
+            
+        }
+        .last{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="div-header">
+                <div class="h-left">
+                    <ul class="header-left">
+                        <li>Home <i class="fa-solid fa-caret-down"></i></li>
+                        <li>Posts<i class="fa-solid fa-caret-down"></i></li>
+                        <li>Components<i class="fa-solid fa-caret-down"></i></li>
+                    </ul>
+                </div>
+                <h1>Milo</h1>
+                <div class="h-right">
+                    <ul class="header-left">
+                        <li>About</li>
+                        <li>Contact</li>
+                        <input type="text" placeholder="Search">
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="container">
+            <div class="s1">
+                <h2>Choose any of these & create your own beautiful blog.</h2>
+                <p class="para-s1">All of the sample layouts are included with your download. Select an example layout
+                    below to preview.
+                </p>
+                <button>PURCHASE THEME</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <div class="articles">
+                <div class="article">
+                    <h3>One column & Sidebar</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/onecolumn.jpg" alt="#" >
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+                <div class="article">
+                    <h3>Two column & Sidebar</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/twocolumn.jpg" alt="#">
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+                <div class="article">
+                    <h3>Three columns</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/threecolumn.jpg" alt="#">
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+                <div class="article">
+                    <h3>Four columns</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/fourcolumn.jpg" alt="#">
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+                <div class="article">
+                    <h3>Featured Posts</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/featured.jpg" alt="#">
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+                <div class="article">
+                    <h3>Full width</h3>
+                    <img src="https://milo.bootlab.io/img/screenshots/fullwidth.jpg" alt="#">
+                    <p>One column magazine/ blog layout with a sidebar on the right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+
+            <div class="footer-ul">
+                <ul>
+                    <li>PRIVACY POLICY</li>
+                    <li>TERMS</li>
+                    <li>FEEDBACK</li>
+                    <li>ADVERTISE</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div class="last">
+                <span>© MILO 2022</span>
+
+                <span>ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

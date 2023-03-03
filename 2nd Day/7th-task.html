@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            color: #eee;
+        }
+        body{
+            font-family:'Inter', sans-serif; 
+        }
+        .banner-section {
+            background-image: url(https://www.shutterstock.com/image-illustration/black-solid-dark-night-260nw-1939034020.jpg);
+            padding: 30px 0 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 768px;
+            padding: 0 30px;
+            margin: 0 auto;
+            width: 100%;
+
+        }
+
+        ul li {
+            list-style: none;
+            float: left;
+            padding: 30px 0;
+            margin-right: 20px;
+        }
+
+        ul {
+            overflow: hidden;
+        }
+
+        .header-button {
+            color: white;
+            float: right;
+            font-size: 20px;
+            padding: 16px;
+            border-radius: 40px;
+            border-color: gray;
+            border: 1px solid gray;
+            background-color: transparent;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #eee;
+        }
+
+
+        h2 {
+            float: left;
+            padding: 20px 40px 20px 0;
+            font-size: 30px;
+        }
+
+        .center-header {
+            text-align: center;
+            margin: 160px 0;
+        }
+
+        h4 {
+            color: red;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 58.704px;
+            font-weight: 500;
+
+        }
+
+        .section-1 {
+            background-color: #eeeeee;
+            padding-top: 40px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .para-s1 {
+            font-size: 50.832px;
+        }
+
+        .button-s1 {
+
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .b-s1 {
+            color: #555555;
+            margin: 5px;
+            font-size: 20px;
+            padding: 16px 32px;
+            border-radius: 30px;
+            background-color: transparent;
+            border: 1px solid #555;
+        }
+
+        .b-s11 {
+            margin: 5px;
+            font-size: 20px;
+            padding: 16px 32px;
+            border-radius: 30px;
+            background-color: transparent;
+            border: 1px solid #555;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        img {
+            width: 100%;
+            border: 1px solid transparent;
+
+        }
+
+        img:hover {
+            margin: 5px;
+            
+        }
+
+        .para-img {
+            padding: 16px 0;
+            font-size: 20px;
+
+        }
+
+        .hover-images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .img-div {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .section-2 {
+            padding: 50px 0;
+            background-color: white;
+            border-bottom: 1px solid #555;
+        }
+
+        h3 {
+            font-size: 42.918px;
+        }
+
+        .logo-image {
+            margin: 0 24px 0 0;
+            width: 72px;
+
+        }
+
+        .button-logo {
+            border-radius: 40px;
+            border: 1px solid #ddd;
+            align-items: center;
+            font-size: 16px;
+            display: flex;
+            padding: 0 32px 0 0;
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        .para-logo {
+            align-items: center;
+
+        }
+
+        .img-logo {
+            width: 60px;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+           
+
+
+        }
+
+        .section-3 {
+            background-color: #000000;
+            color: #eeeeee;
+            padding: 40px;
+
+        }
+
+        .footer-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 24px;
+            font-size: 30px;
+
+        }
+
+        .footer-img {
+            width: 50%;
+       }
+  .footer-bottom-right {
+           
+            padding: 20px;
+            color: #555555;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer {
+            padding: 40px;
+            border-top: 1px solid #555555;
+            background-color: #000000;
+        }
+        .footer-h2{
+            color: #eeeeee;
+        }
+        footer p{
+            color: #555555;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .para-22{
+      justify-content: center;
+      color: #eeeeee;
+        }
+        .para-22:hover{
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner-section">
+            <div class="container">
+                <nav class="ul-1">
+                    <div class="head-div">
+                        <h2>CUBE</h2>
+                    </div>
+                    <ul>
+                        <li>Landings</li>
+                        <li>Pages</li>
+                        <li>Account</li>
+                        <li>Shop</li>
+                        <li>Docs</li>
+                        <button class="header-button">Buy Cube</button>
+                    </ul>
+                </nav>
+                <div class="center-header">
+                    <h4>Cube 2.0.0</h4>
+                    <h1>Building Websites Just Got Easier</h1>
+                </div>
+            </div>
+    </header>
+    <section class="section-1">
+        <div class="container">
+            <p class="para-s1">
+                <strong>50+ prebuilt pages</strong>& unlimited variations
+            </p>
+            <div class="button-s1">
+                <button class="b-s11">all</button>
+                <button class="b-s1">landings</button>
+                <button class="b-s1">pages</button>
+                <button class="b-s1">account</button>
+                <button class="b-s1">shop</button>
+            </div>
+
+            <div class="hover-images">
+
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/startup.jpg" alt="#">
+                    <p class="para-img">Startup</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/saas.jpg" alt="#">
+                    <p class="para-img">Saas</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/coworking.jpg  " alt="#">
+                    <p class="para-img">Coworking</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/coworking.jpg  " alt="#">
+                    <p class="para-img">Job Board</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/job-board.jpg  " alt="#">
+                    <p class="para-img">Agency</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/agency.jpg " alt="#">
+                    <p class="para-img">Blog</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/blog.jpg" alt="#">
+                    <p class="para-img">Product</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/product.jpg" alt="#">
+                    <p class="para-img">App</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/app.jpg" alt="#">
+                    <p class="para-img">Shop</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/shop.jpg" alt="#">
+                    <p class="para-img">Event</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/event.jpg" alt="#">
+                    <p class="para-img">Course</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/course.jpg" alt="#">
+                    <p class="para-img">Service</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/service.jpg" alt="#">
+                    <p class="para-img">Startup</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/software.jpg" alt="#">
+                    <p class="para-img">Software</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/documentation.jpg" alt="#">
+                    <p class="para-img">Documentation</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/about.jpg" alt="#">
+                    <p class="para-img">About</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/pricing.jpg" alt="#">
+                    <p class="para-img">Pricing</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/faq.jpg" alt="#">
+                    <p class="para-img">FAQ</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/terms.jpg" alt="#">
+                    <p class="para-img">Terms</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/services.jpg" alt="#">
+                    <p class="para-img">Services</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/job-listing.jpg" alt="#">
+                    <p class="para-img">Job Listing</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/job-post.jpg" alt="#">
+                    <p class="para-img">Job Post</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/portfolio-grid.jpg" alt="#">
+                    <p class="para-img">Portfolio Grid</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/portfolio-list.jpg" alt="#">
+                    <p class="para-img">Portfolio List</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/case-study.jpg" alt="#">
+                    <p class="para-img">Case Study</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/blog-listing.jpg" alt="#">
+                    <p class="para-img">Blog Listing</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/blog-post.jpg" alt="#">
+                    <p class="para-img">Blog Post</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/contact.jpg" alt="#">
+                    <p class="para-img">Contact Classic</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/contact-location.jpg" alt="#">
+                    <p class="para-img">Contact Location</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/404.jpg" alt="#">
+                    <p class="para-img">404</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/coming-soon.jpg" alt="#">
+                    <p class="para-img">Coming Soon</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/account.jpg" alt="#">
+                    <p class="para-img">Dashbpard</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/account-settings.jpg" alt="#">
+                    <p class="para-img">Settings</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/account-orders.jpg" alt="#">
+                    <p class="para-img">Orders</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/account-billing.jpg" alt="#">
+                    <p class="para-img">Biling</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/sign-in.jpg" alt="#">
+                    <p class="para-img">Sign In</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/register.jpg" alt="#">
+                    <p class="para-img">Register</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/forgot-password.jpg" alt="#">
+                    <p class="para-img">Forgot Password</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/shop-product.jpg" alt="#">
+                    <p class="para-img">Product Page</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/shop-listing.jpg" alt="#">
+                    <p class="para-img">Listing</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/shop-listing.jpg" alt="#">
+                    <p class="para-img">Listing Sidebar</p>
+                </div>
+                <div class="img-div">
+                    <img src="https://cube.webuildthemes.com/assets/images/pages/shop-cart.jpg" alt="#">
+                    <p class="para-img">Cart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <h3>Cube is packed with features you'll love.</h3>
+            <div class="logo">
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/bootstrap.svg" alt="#">
+                    <p class="para-logo"> Built on Bootstrap 5 </p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/js.svg" alt="#">
+                    Vanilla Javascript</p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/webpack.svg" alt="#">
+                    <p class="para-logo">Webpack Setup </p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/w3c.svg" alt="#">
+                    <p class="para-logo"> W3C Valid HTML Code </p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/sass.svg" alt=""><p
+                        class="para-logo">Easy Customisable with SASS</p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/seo.svg" alt="#">
+                    <p class="para-logo">SEO Friendly Code</p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/documentation.svg"
+                        alt="#">
+                    <p class="para-logo"> Detailed Documentation</p>
+                </button>
+                <button class="button-logo">
+                    <img class="img-logo" src="https://cube.webuildthemes.com/assets/images/logo/responsive.svg"
+                        alt="#">
+                    <p class="para-logo"> Fully Responsive </p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-list">
+                    <ul>
+                        <li>+ Can I use only static HTML files?</li>
+                        <li>+ Are images and videos included in the package?</li>
+                        <li>+ How can I request support?</li>
+                        <li>+ Do I get free updates?</li>
+                    </ul>
+                </div>
+                <img class="footer-img" src="https://cube.webuildthemes.com/assets/images/svg/faq.svg" alt="#">
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bottom-right">
+            <h2 class="footer-h2">CUBE</h2>
+            <p para-11>2021 © WEBUILDTHEMES</p>
+            </div>
+            <p class="para-22">BUY CUBE<i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

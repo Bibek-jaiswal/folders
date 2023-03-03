@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .header {
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+
+    .ul-1 {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        gap: 16px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .secondary-button {
+        font-size: 16px;
+        border-radius: 8px;
+        border-color: #28a745;
+
+    }
+
+    .secondary-button:hover {
+        background-color: #28a745;
+        cursor: pointer;
+    }
+
+    .nav-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h1 {
+        font-size: 50px;
+    }
+
+    .section-2 {
+        background-color: #6c757d;
+        padding: 30px 0;
+    }
+
+    .container {
+        max-width: 1140px;
+        padding: 0 15px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .button-s2 {
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 10px 0;
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
+
+    .button-s2:hover {
+        background-color: aqua;
+        cursor: pointer;
+    }
+
+
+
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        padding: 30px 0;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .wrap {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 33.33333%;
+        padding: 0 15px;
+
+
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+
+
+    }
+
+    button:hover {
+        background-color: #6c757d;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom:1px solid black;
+        padding-bottom: 30px;
+
+    }
+    .para-5{
+        text-align: left;
+        line-height: 24px;
+        
+    }
+</style>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="container">
+                <div class="nav-1">
+
+                    <div>
+                        <ul class="ul-1">
+                            <li>Navbar</li>
+                            <li>Home</li>
+                            <li>Link</li>
+                            <li>Disabled</li>
+                            <li>Dropdown</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button class="secondary-button">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <div class="div-1">
+                <h1 class="h1">Hello, world!</h1>
+                <p class="para-1">This is a template for a simple marketing or informational website. It includes a
+                    large
+                    callout called a jumbotron and three supporting pieces of content. Use it as a starting point to
+                    create
+                    something more unique.</p>
+            </div>
+            <button class="button-s2">Learn more<i class="fa-solid fa-angles-right"></i></button>
+        </div>
+    </section>
+    <section class="section-3">
+
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="wrap">
+                    <h1 class="header-1">Heading</h1>
+                    <p class="para-1">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                        commodo,
+                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                        malesuada
+                        magna
+                        mollis euismod. Donec sed odio dui.
+                    </p>
+                    <button>View details<i class="fa-solid fa-angles-right"></i></button>
+                </div>
+                <div class="wrap">
+                    <h1 class="header-1">Heading</h1>
+                    <p class="para-1">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                        commodo,
+                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                        malesuada
+                        magna
+                        mollis euismod. Donec sed odio dui.
+                    </p>
+                    <button>View details<i class="fa-solid fa-angles-right"></i></button>
+                </div>
+                <div class="wrap">
+                    <h1 class="header-1">Heading</h1>
+                    <p class="para-1">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                        commodo,
+                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                        malesuada
+                        magna
+                        mollis euismod. Donec sed odio dui.
+                    </p>
+                    <button>View details<i class="fa-solid fa-angles-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="container">
+    <p class="para-5">© Company 2017-2018</p>
+    </div>
+</body>
+
+</html>

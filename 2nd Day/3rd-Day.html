@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Playfair+Display+SC:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touche</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        .h2 {
+            color: white;
+        }
+
+        .para-1 {
+            font-size: 16px;
+
+        }
+
+        .para-2 {
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        .cafe {
+            color: #ffc107;
+        }
+
+        .head-2 {
+            font-size: 30px;
+        }
+
+        .restaurant {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1170px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+
+        }
+
+        body {
+            font-family: 'Playfair Display SC', serif;
+            font-family: 'Dosis', sans-serif;
+            ;
+        }
+
+
+        .toggler-icon {
+            width: 30px;
+            padding: 10px;
+        }
+
+        .toggler-icon span {
+            display: block;
+            margin-top: 5px;
+            height: 2px;
+            width: 22px;
+            background-color: rgb(199, 28, 28);
+        }
+
+        .banner-section {
+            background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/barista-pour%20over_6B1SUAYDO1.jpg);
+            padding: 30px 0 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .headerWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 20px;
+            border-color: #ffc107;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #ffc107;
+        }
+
+        .wrap-1 {
+            width: 66.6667%;
+            text-align: center;
+            padding: 20px;
+            line-height: 40px;
+            padding: 75px 0 200px 0;
+            margin: 0 auto;
+        }
+
+        hr {
+            width: 32px;
+            height: 3px;
+            background-color: #ffc107;
+            margin-bottom: 30px;
+            border: none;
+        }
+
+
+
+
+
+        img {
+            width: 300px;
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            
+
+
+        }
+        .box-img{
+            box-shadow: 50px 50px #d5dce4;
+        }
+
+        .wrap-2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 40px 0;
+            padding: bottom 60px;
+
+        }
+
+        body {
+            color: grey;
+        }
+
+        .head-1 {
+            font-size: 80px;
+        }
+
+        .left-1 {
+            padding-right: 30px;
+
+        }
+
+        .right-1 {
+            line-height: 20px;
+            width: 33.33333%;
+
+        }
+
+        .para-s3 {
+            color: #fff;
+        }
+
+        .right-para-1 {
+            font-size: 16px;
+            padding: 20px 0;
+            width: 50%;
+        }
+
+        .s5-para {
+            line-height: 40px;
+        }
+
+        .img-2 {
+            padding: 0 70px 0 0;
+        }
+
+        .section-3 {
+            padding-bottom: 96px;
+        }
+
+        .section-4 {
+            padding: top 96px;
+            ;
+        }
+
+        .img-3 {
+            background-image: url(./images/1111.jpg);
+            background-repeat: no-repeato;
+            background-size: cover;
+            padding: 280px;
+            margin-bottom: 96px;
+        }
+
+        .mldd {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 30px;
+        }
+
+        .button-4 {
+            text-align: center;
+        }
+
+        .text-5 {
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .food {
+            height: 100%;
+            width: 25%;
+            padding: 0 16px;
+        }
+
+        .border-main {
+            border-bottom: 3px solid #ffc107;
+            cursor: pointer;
+        }
+
+        .wrap-4 {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+
+
+        }
+
+        .food-head {
+            padding: 16px 0;
+        }
+
+        .cost {
+            padding: 20px 0;
+        }
+
+        .food-para-1 {
+            line-height: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .whole-div-wrap {
+            padding-bottom: 40px;
+            border-bottom: 1px solid black;
+        }
+
+        .para-99 {
+            padding: 40px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .s-para {
+            padding: 30px 0;
+        }
+
+        .section-table {
+            background-color: #6c757d;
+            padding: 100px;
+        }
+
+        .section-6 {
+            padding: 40px;
+            background-color: aquamarine;
+        }
+
+        .section-table {
+            color: beige;
+        }
+
+        .table-1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            gap: 10px;
+            max-width: 100%;
+
+        }
+
+        .food-para {
+            line-height: 30px;
+        }
+
+        .right-table select,
+        input {
+            padding: 10px;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+
+        .person,
+        input {
+            width: 100%;
+        }
+
+        .right-table input {
+            height: 40px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .left-table {
+            max-width: 50%;
+        }
+
+        .left-table input {
+            padding: 10px;
+            margin-top: 16px;
+            font-size: 14px;
+
+
+        }
+
+        .person {
+            padding: 10px 100px 10px;
+
+        }
+
+        .bottom-button {
+            border: 1px solid #ffc107;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        .bottom-button:hover {
+            background-color: transparent;
+            color: #ffc107;
+        }
+
+        .div-button {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .wrap-sep {
+            background-image: url(https://i0.wp.com/contentwriter.in/wp-content/uploads/2020/12/celebrity-manager-careers.png?ssl=1);
+            padding: 500px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            text-align: center;
+            line-height: 20px;
+            width: 100%;
+        }
+
+        .sep-head {
+            color: #ffc107;
+            padding: 30px 0;
+
+        }
+
+        .sep-para-1,
+        .sep-para-2 {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff
+        }
+
+        .lorem-wrap {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            border-bottom: 1px solid #6c757d;
+            padding: 30px 0;
+        }
+
+        .lorem {
+            padding: 40px;
+        }
+
+        .lorem-button {
+            color: black;
+
+        }
+
+        .lorem-button:hover {
+            color: #ffc107;
+        }
+
+        .lorem-para {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .aa {
+            color: #6c757d
+        }
+
+        .imgs {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .para-img {
+            font-size: 20px;
+            padding: 20px 0;
+        }
+
+        .ii {
+            size: 30px 30px;
+            width: 33.33333%;
+            padding: 20px;
+        }
+
+        .images {
+            display: flex;
+
+            flex-wrap: wrap;
+
+        }
+
+        footer {
+            background-color: black;
+            margin-top: 30px;
+            padding: 40px 0;
+        }
+
+        .list-footer {
+            list-style: none;
+            line-height: 30px;
+            /* display: inline-block; */
+            text-align: left;
+
+
+        }
+
+        .lists {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-para {
+            text-align: left;
+
+        }
+
+        h4 {
+
+            color: #ffc107;
+        }
+
+        .bg-color {
+            background-color: #ffc107;
+        }
+
+        .color {
+            color: #ffc107;
+        }
+
+        .list-1 {
+            width: 33.3333%;
+        }
+
+        .last-one {
+            text-align: center;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .last-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0 40px 0;
+        }
+
+        .line {
+            width: 40px;
+            color: #fff;
+            border: 1px solid #fff;
+            display: inline-block;
+            flex-direction: row;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="banner-section">
+        <div class="container">
+            <div class="headerWrapper">
+
+                <div>
+
+                    <h2>Touche</h2>
+                </div>
+                <div class="top">
+
+                    <div class="toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="wrap-1">
+                <p class="para-1">
+                    <span class="cafe">CAFE</span> <span class="restaurant">/ RESTAURANT</span>
+                </p>
+                <h1 class="head-1">Touche</h1>
+                <p class="para-2">
+                    A unique café located in the heart of Los Angeles. Always fresh coffee and biscuits. Open for indoor
+                    dining and to-go orders.
+                </p>
+                <button>RESERVATION</button>
+            </div>
+        </div>
+    </header>
+    <section class="section-2">
+        <div class="container">
+            <div class="wrap-2">
+
+                <div class="left-1">
+                    <hr class="hr-1">
+                    <p>Take a coffee break or enjoy a meal.</p>
+                </div>
+                <div class="img-1">
+                    <img class="box-img" src="https://yevgenysim-turkey.github.io/touche/assets/img/2.jpg" alt="1">
+                </div>
+                <div class="right-1">
+                    <h2 class="head-2"><em> Always</em> amazing experience</h2>
+                    <p class="right-para-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum voluptatem
+                        perspiciatis deserunt quibusdam iste possimus ipsam porro debitis quisquam quidem.</p>
+                </div>
+            </div>
+        </div>
+        <section class="section-3">
+            <div class="container">
+                <div class="wrap-2">
+                    <div class="left-2">
+                        <h2 class="head-2"><em> Beautiful </em>outdoor seating</h2>
+                        <p class="right-para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae mollitia,
+                            harum ipsa perferendis est doloremque commodi veniam iusto repellendus dicta!</p>
+                    </div>
+                    <div class="middle-2">
+                        <hr class="hr-1">
+                        <p>Great variety of foods you will enjoy.</p>
+                    </div>
+                    <div class="img-2">
+                        <img  class="box-img" src="https://yevgenysim-turkey.github.io/touche/assets/img/7.jpg" alt="2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="container">
+                <div class="img-3">
+                    <div class="middle-2">
+                        <hr class="hr-1">
+                        <p class="para-s3">
+                            Enjoy our speciality coffees and award wining doughnuts in a friendly atmosphere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <div class="wrap-3">
+                    <div class="text-5">
+                        <h2 class="head-2">Menu Options</h2>
+                        <p class="s5-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minus dolores, enim facere
+                            voluptatibus aperiam.
+                        </p>
+                        <div class="buttons-4">
+                            <ul class="mldd">
+                                <li class="border-main">MAINS</li>
+                                <li>LUNCH</li>
+                                <li>DINNER</li>
+                                <li>DRINKS</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="whole-div-wrap">
+                    <div class="wrap-4">
+
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/26.jpg" alt="f1">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">lorem ipsum dolor sit amet</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$15</h4>
+                        </div>
+
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/27.jpg" alt="f2">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">Fusc id ante ut arcu</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$23</h4>
+                        </div>
+
+                    </div>
+                    <div class="wrap-4">
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/28.jpg" alt="f3">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">Fusce sed dolor eget tortor</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$16</h4>
+                        </div>
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/29.jpg" alt="f4">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">Lorem ipsum dolor sit amet</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$15</h4>
+                        </div>
+                    </div>
+                    <div class="wrap-4">
+                        <div class="cost-div">
+
+                        </div>
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/30.jpg" alt="f5">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">Fusce id ante ut arcu</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$23</h4>
+                        </div>
+                        <div class="food">
+                            <img src="https://yevgenysim-turkey.github.io/touche/assets/img/31.jpg" alt="f6">
+                        </div>
+                        <div class="food-para">
+                            <h3 class="food-head">Fusce sed dolor eget tortor</h3>
+                            <p class="food-para-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque vero eveniet
+                                cum,
+                                necessitatibus veniam.
+                            </p>
+                        </div>
+                        <div class="cost-div">
+                            <h4 class="cost">$16</h4>
+                        </div>
+                    </div>
+                </div>
+                <section class="featured">
+                    <div class="container">
+                        <div class="para-99">
+                            <div class="head-2">Our <em>featured</em> dishes</div>
+                            <p class="s-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+                                praesentium temporibus soluta error omnis, deserunt odit perferendis veniam ad
+                                reiciendis.</p>
+                </section>
+        </section>
+    </section>
+    <section class="section-table">
+        <div class="container">
+            <div class="content-table">
+                <h4 class="head-2">Make online reservation</h4>
+                <p class="food-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum adipisci odio esse
+                    deserunt delectus minima a at quasi omnis tempore.</p>
+            </div>
+            <div>
+                <form action="" class="table-1">
+                    <div class="left-table">
+                        <input type="text" placeholder="Full name">
+                        <input type="text" placeholder="Phone number">
+                        <input type="text" placeholder="Email address">
+                    </div>
+                    <div class="right-table">
+                        <select class="person" name="options" id="options">
+                            <option value="1 person" selected>1 person</option>
+                            <option value="2 person">2 person</option>
+                            <option value="3 person">3 person</option>
+                            <option value="4 person">4 person</option>
+                            <option value="5 person">5 person</option>
+                        </select>
+                        <input class="date" type="date" id="date" name="date" value="2021-02-03">
+                        <input class="time" type="time" id="time" name="time" value="03:20:00">
+                    </div>
+            </div>
+            <div class="div-button">
+                <button class="bottom-button">Reserve a table</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="september">
+
+        <div class="wrap-sep">
+            <div class="container">
+                <div class="sep-content">
+                    <h4 class="sep-head">SEPTEMBER 30, 2017</h4>
+                    <p class="sep-para-1">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, repellendus!
+                    </p>
+                    <p class="sep-para-2">
+                        Alias earum, labore doloremque iusto a modi et, dolorem veritatis iste quis ab. Facere est
+                        optio, voluptate molestias aspernatur impedit perferendis odit?
+                    </p>
+                    <div class="div-button">
+                        <button class="bottom-button">Reserve a table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lorem">
+        <div class="container">
+            <div class="lorem-wrap">
+                <div class="wrap-lorem-head">
+                    <h2 class="aa">29</h2>
+                    <h3>Sep</h3>
+                </div>
+
+                <div>
+                    <p class="lorem-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus
+                        exercitationem non repellat error reprehenderit!</p>
+                </div>
+                <div>
+                    <button class="lorem-button">RESERVE A TABLE</button>
+                </div>
+            </div>
+            <div class="lorem-wrap">
+                <div class="wrap-lorem-head">
+                    <h2 class="aa">28</h2>
+                    <h3>Sep</h3>
+                </div>
+
+                <div>
+                    <p class="lorem-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus
+                        exercitationem non repellat error reprehenderit!</p>
+                </div>
+                <div>
+                    <button class="lorem-button">RESERVE A TABLE</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="imgs">
+        <div class="container">
+            <h3 class="head-2">Our gallery</h3>
+            <p class="para-img">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="images">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/11.jpg" alt="i1">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/17.jpg" alt="i2">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/13.jpg" alt="i3">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/18.jpg" alt="i4">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/15.jpg" alt="i5">
+                <img class="ii" src="https://yevgenysim-turkey.github.io/touche/assets/img/12.jpg" alt="i6">
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27689225423!2d85.29111337616109!3d27.709031933186697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1669965446184!5m2!1sen!2snp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="lists">
+                <div class="list-1">
+                    <h4>ABOUT US</h4>
+                    <p class="footer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                        nesciunt corporis perspiciatis nemo dignissimos facere?</p>
+                </div>
+                <div class="list-2">
+                    <h4>CONTACT INFO</h4>
+                    <ul class="list-footer">
+                        <li><i class="fa-solid fa-location-dot"></i> 1234 Altschul, Los Angeles, CA 10027-0000</li>
+                        <li><i class="fa-solid fa-phone-flip"></i><span class="bg-color">+1 987 654 3210</span></li>
+                        <li><i class="fa-regular fa-envelope"></i><span class="color"> <ins>admin@domain.com</ins>
+                            </span></li>
+                    </ul>
+                </div>
+                <div class="list-3">
+                    <h4>OPENING HOURS</h4>
+                    <ul class="list-footer">
+                        <li class="display">MONDAY - THURSDAY</li>
+                        <li>10:00AM - 11:00PM</li>
+                        <br>
+                        <li class="display">FRIDAY - SUNDAY</li>
+                        <li>12:00AM - 03:00AM</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="last-line">
+                <span class="line"></span>
+                <li class="last-one">© 2021 Touché. All rights reserved.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

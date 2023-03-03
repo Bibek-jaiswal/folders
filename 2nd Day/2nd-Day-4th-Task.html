@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        max-width: 768px;
+        padding: 0 30px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nav-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h-top {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .section-1 {
+        padding: 20px 0;
+    }
+
+    button {
+        font-size: 16px;
+        background-color: transparent;
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: #6c757d;
+    }
+
+    .left {
+        font-size: 16px;
+        color: #6c757d;
+    }
+
+    .section-2 {
+        font-size: 16px;
+        list-style: none;
+        color: #6c757d;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 {
+        background-color: #343a40;
+        color: #f8f9fa;
+        text-align: left;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .header-1 {
+        font-size: 48px;
+        padding: 20px 0px;
+        font-weight:bold;
+    }
+
+    .para-1 {
+        line-height: 16px;
+        font-size: 16px;
+    }
+
+    .para-2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    .header-21 {
+        font-size: 16px;
+        padding-top: 16px;
+        color: #0d6efd;
+    }
+
+    .header-2 {
+        font-size: 16px;
+        padding-top: 16px;
+        color: #198754;
+    }
+
+    .header-3 {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    .date {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .para-3 {
+        font-size: 16px;
+        text-align: left;
+        line-height: 16px;
+    }
+
+    .continue {
+        color: rgb(23, 133, 206);
+        font-weight: 300;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .thumbnail {
+        text-align: right;
+        padding: 100px 50px;
+        background-color: #404046;
+        color: #f8f9fa;
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+    }
+
+    @media(max-width: 767px) {
+        .total {
+            max-width: 100%;
+        }
+
+        .main-content {
+            padding-right: 0;
+        }
+         .aside-1 {
+            max-width: 100%;
+        }
+
+        .main-content {
+            padding-right: 0;
+        }
+    }
+
+    .text {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .section-4 {
+        margin-bottom: 20px;
+    }
+
+    .header-4 {
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        font-size: 24px;
+        font-weight:600 ;
+    }
+
+    .aside-1 {
+        background-color: white;
+        text-align: left;
+        font-size: 16px;
+
+    }
+
+    .aside-11 {
+        background-color: #6c757d;
+        padding: 20px;
+        line-height: 20px;
+        padding: 24px 0;
+    }
+
+    .jan-1 {
+        font-size: 24px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+
+    }
+    .text-modify{
+        width:50% ;
+    }
+
+    .h11 {
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .h22 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .para-7 {
+        font-size: 20px;
+        line-height: 20px;
+        
+        font-weight: 300;
+    }
+
+    .para-3 {
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .para-4 {
+        padding: 20px 0;
+    }
+
+    .para-5 {
+        padding-top: 10px;
+    }
+
+    .para-3,
+    .para-4,
+    .para-5 {
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+    .red-color {
+        color: #d63384;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table td,
+    .table th {
+        border-bottom: 1px solid #cccccc;
+        padding: 16px;
+        text-align: left;
+    }
+
+    .content-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        flex: 1;
+        padding-right: 30px;
+    }
+
+    .aside-1 {
+        max-width: 33.33%;
+        width: 100%;
+    }
+
+   
+    
+    
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table td,
+    .table th {
+        padding: 16px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    .thead {
+        border-bottom: 1px solid black;
+
+    }
+
+    .list-1 {
+        padding-left: 20px;
+        line-height: 20px;
+    }
+
+    .ol {
+        padding-left: 20px;
+        line-height: 20px;
+    }
+
+    .button {
+        font-size: 24px;
+
+    }
+
+    .primary {
+        background-color: transparent;
+        color: #0d6efd;
+        border-color: #0d6efd;
+        cursor: pointer;
+        font-weight: 50;
+        border-width: -6px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+
+    .secondary {
+        background-color: transparent;
+        color: #6c757d;
+        border-color: #6c757d;
+        font-weight: 50;
+        border-width: -6px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+
+
+    .aside-ul {
+        font-size: 16px;
+        list-style: none;
+        line-height: 24px;
+        padding: 0 0 0 20px;
+       
+    }
+    .aside-para{
+        padding: 20px 0 20px 20px;
+    }
+    a{
+        color: #0d6efd;
+    }
+    ul li a{
+        color: #0d6efd;
+    }
+
+    .aside-22 {
+        margin-bottom: 20px;
+    }
+
+    .aside-33 {
+        padding: 20px 0;
+        line-height: 24px;
+    }
+
+    .last-section {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .last-para {
+        font-size: 16px;
+        line-height: 20px;
+        background-color: #ced4da;
+        padding: 16px;
+    }
+
+    .aside-top {
+        padding: 20px 0 20px 20px;
+    }
+    
+    
+</style>
+
+<body>
+    
+    <section>
+        <div class="container">
+            <header class="section-1">
+                <nav>
+                    <div class="nav-1">
+                        <div class="left"><ins>  Subscribe </ins></div>
+                        <div class="h-top">Large</div>
+                        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></i>
+                            <button>Sign up</button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="section-22">
+            <div class="container">
+                <ul class="section-2">
+                    <li> <ins>  World</ins> </li>
+                    <li> <ins>  U.S.</ins> </li>
+                    <li> <ins>   Technology</ins></li>
+                    <li> <ins>   Design</ins></li>
+                    <li> <ins>   Culture</ins></li>
+                    <li> <ins>   Business</ins></li>
+                    <li> <ins>  Politics</ins> </li>
+                    <li> <ins>   Opinion</ins></li>
+                    <li> <ins>   Science</ins></li>
+                    <li> <ins>   Health</ins></li>
+                    <li> <ins>  Style</ins> </li>
+                    <li> <ins>   Travel</ins></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section-3">
+                   <div class="text-modify"> <h1 class="header-1">
+                        Title of a longer featured blog post
+                    </h1>
+                    <p class="para-1">
+                        Multiple lines of text that form the lede, informing new readers quickly and efficiently about
+                        what's most interesting in this post's contents.
+                    </p>
+                    <p class="para-2">
+                       <ins> Continue reading...</ins>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="container">
+                <div class="total">
+                    <div class="text">
+                        <h2 class="header-21">World</h2>
+                        <h2 class="header-3">Featured post</h2>
+                        <h3 class="date">Nov 12</h3>
+                        <p class="para-7">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                        <h4 class="continue"><u> Continue reading</u></h4>
+                    </div>
+
+
+                    <div class="text">
+                        <h2 class="header-2">Design</h2>
+                        <h2 class="header-3">Post title</h2>
+                        <h3 class="date">Nov 11</h3>
+                        <p class="para-7">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                        <h4 class="continue"> <u> Continue reading</u></h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="content-row">
+                <div class="main-content">
+                    <div class="top">
+                        <h4 class="header-4"><em>   From the Firhose</em></h4>
+                    </div>
+                    <div class="h11">Sample blog post</div>
+                    <div class="jan1">January 1, 2021 by <a href="#">Mark</a></div>
+                    <div class="para-3">This blog post shows a few different types of content that’s supported and
+                        styled
+                        with
+                        Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as
+                        expected.
+                    </div>
+                    <div class="para-5">This is some additional paragraph placeholder content. It has been written to
+                        fill
+                        the
+                        available space and show how a longer snippet of text affects the surrounding content. We'll
+                        repeat
+                        it
+                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                        text.
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11"></h2>Blockquotes
+                        <div class="para-4">This is an example blockquote in action.</div>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h22">Quoted text goes here</h2>
+                        <p class="para-4">This is some additional paragraph placeholder content. It has been written to
+                            fill
+                            the
+                            available space and show how a longer snippet of text affects the surrounding content. We'll
+                            repeat
+                            it
+                            often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                            text.
+                        </p>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">Example lists</h2>
+                        <p class="para-4">This is some additional paragraph placeholder content. It's a slightly shorter
+                            version
+                            of
+                            the other highly repetitive body text used throughout. This is an example unordered list:
+                        </p>
+                        <div class="list">
+                            <ul class="list-1">
+                                <li>First list item</li>
+                                <li>Second list item with a longer description</li>
+                                <li>Third list item to close it out</li>
+                            </ul>
+                        </div>
+                        <p class="para-4">And this is an ordered list:</p>
+                        <div>
+                            <ol class="ol">
+                                <li>First list item</li>
+                                <li>Second list item with a longer description</li>
+                                <li>Third list item to close it out</li>
+                            </ol>
+                        </div>
+                        <div class="para-4">And this is a definition list</div>
+                    </div>
+                    <div class="whole-div">
+                        <div class="topic-1">
+                            <h2 class="heading">Hypertext Markup Language (HTML)</h2>
+                            <p class="para-4">The language used to describe and define the content of a Web page</p>
+                        </div>
+                        <div class="topic-1">
+                            <h2 class="heading">Cascading Style Sheets</h2>
+                            <p class="para-4">Used to describe the appearance of Web content</p>
+
+                        </div>
+                        <div class="heading">
+                            <h2 class="heading">Javascript</h2>
+                            <p class="para-4">The programming language used to build advanced Web sites and applications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">Inline HTML elements</h2>
+                        <p class="para-4">HTML defines a long list of available inline tags, a complete list of which
+                            can be
+                            found on the <a href="#">Mozilla Developer Network.</a></p>
+                    </div>
+                    <div>
+                        <ul class="list-1">
+                            <li>To bold text, use <code class="red-color">&lt;strong&gt;</code>.</li>
+                            <li>To italicize text, use <code class="red-color"> &lt;em&gt;</code>.</li>
+                            <li>Abbreviations, like HTML should use <code class="red-color">&lt;abbr&gt;</code>, with an
+                                optional <code class="red-color">title</code> attribute for the full phrase.</li>
+                            <li> Citations, like — Mark Otto, should use <code class="red-color">&lt;cite&gt;</code>.
+                            </li>
+                            <li><del>Deleted</del> text should use <code class="red-color">&lt;del&gt;</code> and
+                                <ins>inserted</ins> text should use <code class="red-color">&lt;ins&gt;</code>.
+                            </li>
+                            <li>Superscript <sup>text</sup> uses <code class="red-color">&lt;sup&gt;</code> and
+                                subscript
+                                <sub>text</sub> uses <code class="red-color">sub</code>.
+                            </li>
+                        </ul>
+                        <p class="para-4">
+                            Most of these elements are styled by browsers with few modifications on our part.
+                        </p>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">Heading</h2>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It has been written to fill the
+                            available
+                            space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                            often
+                            to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+                        </p>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">Sub-heading</h2>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It has been written to fill the
+                            available
+                            space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                            often
+                            to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+                        </p>
+                        <p class="para-4">
+                            Example code block
+                        </p>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It's a slightly shorter version of
+                            the
+                            other
+                            highly repetitive body text used throughout.
+                        </p>
+                    </div>
+                    <div class="sec-div">
+                        <h2 class="h11">
+                            Another blog post
+                        </h2>
+                        <p class="para-4">
+                            December 23, 2020 by <a href="#">Jacob</a>
+                        </p>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It has been written to fill the
+                            available
+                            space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                            often
+                            to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+                        </p>
+                        <p class="para-4"> Longer quote goes here, maybe with some <strong>emphasized text</strong> in
+                            the
+                            middle of it. </p>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It has been written to fill the
+                            available
+                            space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                            often
+                            to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+                        </p>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">
+                            Example table
+                        </h2>
+                        <p class="para-4">And don't forget about tables in these posts:</p>
+                        <table>
+                            <thead class="thead">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Upvotes</th>
+                                    <th>Downvotes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Charlie</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>Totals</td>
+                                    <td>21</td>
+                                    <td>23</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It's a slightly shorter version of
+                            the
+                            other
+                            highly repetitive body text used throughout.
+                        </p>
+                    </div>
+                    <div class="whole-div">
+                        <h2 class="h11">New feature</h2>
+                        <p class="para-4">
+                            December 14, 2020 by <a href="#">Chris</a>
+                        </p>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It has been written to fill the
+                            available space and show how a longer snippet of text affects the surrounding content. We'll
+                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
+                            string of text.
+                        </p>
+
+                        <ul class="list-1">
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p class="para-4">
+                            This is some additional paragraph placeholder content. It's a slightly shorter version of
+                            the other highly repetitive body text used throughout.
+                        </p>
+                        <div class="button">
+                            <button class="primary">Older</button>
+                            <button class="secondary">Newer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aside-1">
+                    <aside class="aside-11">
+                        <h2 class="aside-top"><em>About</em></h2>
+                        <p class="aside-para">Customize this section to tell your visitors a little bit about your
+                            publication, writers, content, or something else entirely. Totally up to you.</p>
+                    </aside>
+                    <aside class="aside-22">
+                        <h3 class="aside-top"><em>Archives</em> </h3>
+                        <ul class="aside-ul">
+                            <li><a href="#">March 2021</a></li>
+                            <li> <a href="#"> February 2021</a></li>
+                            <li> <a href="#">Jamuary 2021</a></li>
+                            <li> <a href="#"> December 2021</a></li>
+                            <li> <a href="#"> November 2021</a></li>
+                            <li> <a href="#">October 2021</a></li>
+                            <li><a href="#">September 2021</a></li>
+                            <li><a href="#">August 2021</a></li>
+                            <li> <a href="#"> July 2021</a></li>
+                            <li> <a href="#"> June 2021</a></li>
+                            <li> <a href="#"> May 2021</a></li>
+                            <li> <a href="#">April 2021</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="aside-33">
+                        <h2 class="aside-top"><em>Elsewhere</em></h2>
+                        <ul class="aside-ul">
+                            <li><a href="#">GitHub </a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <section class="last-section">
+            <p class="last-para">
+                Blog template built for <em><a href="#">Bootstrap</a></em> by <em><a href="#">_@mdo.</a></em>
+            </p>
+            <p class="last-para"><em><a href="#">Back to top</a></em></p>
+        </section>
+</body>
+
+</html>
